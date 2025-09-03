@@ -18,7 +18,7 @@ header:
 # If your Blog is long, you may want to consider adding a Table of Contents by adding the following two settings.
 toc: true
 toc_sticky: true
-date: 2025-01-07 12:00:00S
+date: 2025-01-07 12:00:00
 ---
 
 

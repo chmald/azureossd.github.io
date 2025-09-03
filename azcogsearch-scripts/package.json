@@ -1,31 +1,44 @@
 {
   "name": "azcogsearch-scripts",
-  "version": "1.0.0",
-  "description": "Azure Cognitive Search indexing scripts for the Azure OSS Developer Support blog",
+  "version": "2.0.0",
+  "description": "Enhanced Azure AI Search indexing scripts for the Azure OSS Developer Support blog",
   "main": "feed-index.js",
   "scripts": {
     "index": "node feed-index.js",
+    "create-index": "node create-index.js",
+    "search": "node search-client.js",
+    "validate": "node validate-config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "audit": "npm audit",
     "audit-fix": "npm audit fix"
   },
   "keywords": [
     "azure",
+    "ai-search",
     "cognitive-search",
     "blog",
     "indexing",
-    "search"
+    "search",
+    "semantic-search",
+    "faceted-search"
   ],
   "author": "Azure OSS Developer Support Team",
   "license": "MIT",
   "dependencies": {
-    "@azure/search-documents": "^11.3.2",
+    "@azure/search-documents": "^12.0.0",
     "dotenv": "^16.3.1",
     "gray-matter": "^4.0.3",
-    "remove-markdown": "^0.5.0"
+    "remove-markdown": "^0.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "natural": "^6.12.0",
+    "stopword": "^2.0.8",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "repository": {
     "type": "git",
